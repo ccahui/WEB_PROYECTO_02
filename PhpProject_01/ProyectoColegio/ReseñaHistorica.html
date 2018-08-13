@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="utf-8">
+        <meta name='viewport' content='width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0,minimun-scale=1.0'>
+        <link rel='stylesheet' href="CSS/bootstrap.min.css">
+        <link rel='stylesheet' href="CSS/estilo.css">
+        <script type="text/javascript" src="js/jQuery.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script>
+            /*Agregar Estilo de manera rapida agregando la clase de texto*/
+         $(document).ready(function(){
+             $('.tab-pane p').attr('class','text-info');
+         });          
+        </script>
+    </head>
+    
+ 
+    <body>
+        <div class="jumbotron">
+            <div class="container">
+                <h2>Resena Historica</h2>
+                <p>Estas tablas utilizan collapse para motrar contenido dinamico con presionar el encabezado por donde
+                se encuentra navegando, podemos cambiar el contenido dependiendo de la eleccion del usuario con un menu simple
+                para navegar a atraves de las secciones</p>
+            </div>
+        </div>
+         <div class="container">               
+            <div class="col-md-6">
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class=""><strong>Resena Historica</strong></li>
+                </ol>         
+            </div>
+        </div>
+        <div class="container">
+            <div role="tabpanel">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#seccion01" aria-controls="seccion01" data-toggle="tab" role="tab">Resena I</a></li>
+                    <li role="presentation"><a href="#seccion02" aria-controls="seccion02" data-toggle="tab" role="tab">Resena II </a></li>
+                    <li role="presentation"><a href="#seccion03" aria-controls="seccion03" data-toggle="tab" role="tab">Resena III</a></li>
+                </ul>
+                <div class="tab-content">
+                    <!-- ACTIVE en tab pane para mostrar por defecto-->
+                    <div role="tabpanel" class="tab-pane active" id="seccion01">
+                        <h3>Creacion de la IE</h3>
+                        <p>Para realizar estas tablas dinamicas se utiliza un div con role=tabpanel y class tab-pane</p>
+                        <p>Para realizar el menu navegacion  se esta realizando
+                            una lista de la parte de navegacion con la class <strong>nav nav-tabs</strong> en la etiqueta ul con 
+                            role=tablist, cada uno de los elemento de la lista con el role=presentation, dentro de cada li esta
+                        un href con data-toggle=tab role=tab</p>
+                        <p>Para realizar el menu navegacion  se esta realizando
+                            una lista de la parte de navegacion con la class <strong>nav nav-tabs</strong> en la etiqueta ul con 
+                            role=tablist, cada uno de los elemento de la lista con el role=presentation, dentro de cada li esta
+                        un href con data-toggle=tab role=tab</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="seccion02">
+                        <h3>Historia</h3>
+                        <p>Para realizar estas tablas dinamicas se utiliza un div con role=tabpanel y class tab-pane</p>
+                        <p>Para realizar el menu navegacion  se esta realizando
+                            una lista de la parte de navegacion con la class <strong>nav nav-tabs</strong> en la etiqueta ul con 
+                            role=tablist, cada uno de los elemento de la lista con el role=presentation, dentro de cada li esta
+                        un href con data-toggle=tab role=tab</p>
+                        <p>Para realizar el menu navegacion  se esta realizando
+                            una lista de la parte de navegacion con la class <strong>nav nav-tabs</strong> en la etiqueta ul con 
+                            role=tablist, cada uno de los elemento de la lista con el role=presentation, dentro de cada li esta
+                        un href con data-toggle=tab role=tab</p>
+                        <p>Para realizar el menu navegacion  se esta realizando
+                            una lista de la parte de navegacion con la class <strong>nav nav-tabs</strong> en la etiqueta ul con 
+                            role=tablist, cada uno de los elemento de la lista con el role=presentation, dentro de cada li esta
+                        un href con data-toggle=tab role=tab</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="seccion03">
+                        <h3>Nicolas de Pierola</h3>
+                        <p>Para realizar estas tablas dinamicas se utiliza un div con role=tabpanel y class tab-pane</p>
+                        <p>Para realizar el menu navegacion  se esta realizando
+                            una lista de la parte de navegacion con la class <strong>nav nav-tabs</strong> en la etiqueta ul con 
+                            role=tablist, cada uno de los elemento de la lista con el role=presentation, dentro de cada li esta
+                        un href con data-toggle=tab role=tab</p>
+                        <p>Para realizar el menu navegacion  se esta realizando
+                            una lista de la parte de navegacion con la class <strong>nav nav-tabs</strong> en la etiqueta ul con 
+                            role=tablist, cada uno de los elemento de la lista con el role=presentation, dentro de cada li esta
+                        un href con data-toggle=tab role=tab</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

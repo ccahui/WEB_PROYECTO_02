@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Areas Deportivas</title>
+        <meta charset="utf-8">
+        <meta name='viewport' content='width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0,minimun-scale=1.0'>
+        <link rel='stylesheet' href="CSS/bootstrap.min.css">
+        <link rel='stylesheet' href="CSS/estilo.css">
+        <script type="text/javascript" src="js/jQuery.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('.btn').click(function () {
+                    var hermano = $(this).siblings();
+                    /*Para su hermano*/
+                    $(hermano[2]).toggle();
+                    if ($(this).hasClass('btn btn-primary')) {
+                        $(this).attr('class', 'btn btn-danger btn-sm');
+                        $(this).text("Ver menos")
+                    } else {
+                        $(this).attr('class', 'btn btn-primary btn-sm')
+                        $(this).text("Ver Mas");
+                    }
+                    ;
+                });
+
+            });
+        </script>
+    </head>
+
+    <body>
+
+        <div class="jumbotron">
+            <div class="container">
+                <h2>Areas deportivas</h2>
+                <p>Las areas deportivas que se realizan son diferecntes dentro dela cuales realizaremos lo siguiente</p>
+            </div>
+        </div>
+        <div class="container">               
+            <div class="col-md-6">
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class=""><strong>Areas Deportivas</strong></li>
+                </ol>         
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="thumbnail   ">
+                        <img src="../images/img01.jpg" alt="imagen01">
+                        <div class="caption">
+                            <h3>Futbol</h3>
+                            <p>Esta es una imagen realizada con la clase de boostrap para imagenes thumbnail y la clase caption para 
+                                escribir contenido sobre la imagen descrita</p>
+                            <p class="texto" hidden> Escribir contenido sobre la imagen descrita COntenido mostrado para la ralizacion
+                                COntenido mostrado para la ralizacion
+                            </p>
+                            <button class="btn btn-primary btn-sm">Ver Mas</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="../images/img01.jpg" alt="imagen01">
+                        <div class="caption">
+                            <h3>Voley</h3>
+                            <p>Esta es una imagen realizada con la clase de boostrap para imagenes thumbnail y la clase caption para 
+                                escribir contenido sobre la imagen descrita</p>
+                            <p class="texto" hidden> Escribir contenido sobre la imagen descrita COntenido mostrado para la ralizacion
+                                COntenido mostrado para la ralizacion
+                            </p>
+                            <button class="btn btn-primary btn-sm">Ver Mas</button> 
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="../images/img03.jpg" alt="imagen01">
+                        <div class="caption">
+                            <h3>Basquet </h3>
+                            <p>Esta es una imagen realizada con la clase de boostrap para imagenes thumbnail y la clase caption para 
+                                asdasd adada ad as as a sddasdasd adsa</p>
+                            <p class="texto" hidden> Escribir contenido sobre la imagen descrita COntenido mostrado para la ralizacion
+                                COntenido mostrado para la ralizacion
+                            </p>
+                            <button class="btn btn-primary btn-sm">Ver Mas</button>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <br>
+          <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="thumbnail   ">
+                        <img src="../images/img01.jpg" alt="imagen01">
+                        <div class="caption">
+                            <h3>Natacion</h3>
+                            <p>Esta es una imagen realizada con la clase de boostrap para imagenes thumbnail y la clase caption para 
+                                escribir contenido sobre la imagen descrita</p>
+                            <p class="texto" hidden> Escribir contenido sobre la imagen descrita COntenido mostrado para la ralizacion
+                                COntenido mostrado para la ralizacion
+                            </p>
+                            <button class="btn btn-primary btn-sm">Ver Mas</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="../images/img01.jpg" alt="imagen01">
+                        <div class="caption">
+                            <h3>Atletismo</h3>
+                            <p>Esta es una imagen realizada con la clase de boostrap para imagenes thumbnail y la clase caption para 
+                                escribir contenido sobre la imagen descrita</p>
+                            <p class="texto" hidden> Escribir contenido sobre la imagen descrita COntenido mostrado para la ralizacion
+                                COntenido mostrado para la ralizacion
+                            </p>
+                            <button class="btn btn-primary btn-sm">Ver Mas</button> 
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="../images/img03.jpg" alt="imagen01">
+                        <div class="caption">
+                            <h3>Otros</h3>
+                            <p>Esta es una imagen realizada con la clase de boostrap para imagenes thumbnail y la clase caption para 
+                                asdasd adada ad as as a sddasdasd adsa</p>
+                            <p class="texto" hidden> Escribir contenido sobre la imagen descrita COntenido mostrado para la ralizacion
+                                COntenido mostrado para la ralizacion
+                            </p>
+                            <button class="btn btn-primary btn-sm">Ver Mas</button>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>
